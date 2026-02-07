@@ -14,19 +14,19 @@
    =============================== */
 @font-face {
   font-family: 'CoupletFont';              /* 👉 tên font câu đối */
-  src: url(CHUVIET/UTM-Brushtip-C.ttf) format('truetype');
+  src: url(./CHUVIET/UTM-Brushtip-C.ttf) format('truetype');
                                             /* 👉 đổi tên file tại đây */
   font-weight: normal;
   font-style: normal;
 }@font-face {
   font-family: 'FONTTEN';        /* tên font dùng trong CSS */
-  src: url(CHUVIET/Simplesnails.ttf) format('truetype');
+  src: url(./CHUVIET/MTD-Dettiruka.otf) format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'thuphap';              /* 👉 tên font câu đối */
-  src: url(CHUVIET/SVN-Magellin.otf) format('truetype');
+  src: url(./CHUVIET/VNI-thuphap.ttf) format('truetype');
                                             /* 👉 đổi tên file tại đây */
   font-weight: normal;
   font-style: normal;
@@ -40,16 +40,6 @@ html,body {
   color: #000000;                    /* màu chữ mặc định */
   overflow-x: hidden;                /* CHỐNG TRÀN NGANG (rất quan trọng mobile) */
   scroll-behavior: smooth;           /* cuộn mượt */
-}
-
-/* ===============================
-   FONT TÙY CHỈNH (THƯ PHÁP)
-   =============================== */
-@font-face {
-  font-family: 'WeddingFont';        /* tên font dùng trong CSS */
-  src: url(Font/VNI_THUPHAP.TTF) format('truetype');
-  font-weight: normal;
-  font-style: normal;
 }
 
 /* ===============================
@@ -110,7 +100,7 @@ html,body {
   display: flex;
   flex-direction: column;       /* CHỮ XẾP DỌC */
   gap: 6px;
-    font-family: 'CoupletFont', 'WeddingFont', serif;
+    font-family: 'CoupletFont';
                                   /* 👉 FONT CÂU ĐỐI */
   font-size: 30px;
   font-weight: normal;            /* giữ nét thư pháp */
@@ -189,9 +179,13 @@ html,body {
 
 /* Card căn giữa nội dung */
 .card.center {
-  text-align: center;  
-    font-family: 'FONTTEN', 'WeddingFont', serif;
+  text-align: center; 
                 /* căn giữa chữ */
+}
+.card.center h3{
+  white-space: nowrap; 
+  font-size: 30px;
+   font-family: 'CoupletFont'; 
 }
 
 /* ===============================
@@ -207,7 +201,7 @@ html,body {
   display: flex;
   align-items: center;   /* canh giữa theo chiều dọc */
   justify-content: center;
-  gap: 12px;             /* khoảng cách giữa chữ */
+  gap: 10px;             /* khoảng cách giữa chữ */
   white-space: nowrap; /* ❗ không cho xuống dòng */
 }
 @media (max-width: 480px){
@@ -280,7 +274,7 @@ html,body {
 
 .hero-image img {
   width: 100%;                       /* co theo màn hình */
-  max-width: 420px;                  /* 👈 CHỈNH TO / NHỎ ẢNH TẠI ĐÂY */
+  max-width: 470px;                  /* 👈 CHỈNH TO / NHỎ ẢNH TẠI ĐÂY */
   height: auto;                      /* giữ đúng tỉ lệ */
 
   border-radius: 18px;               /* bo góc */
@@ -359,7 +353,7 @@ html,body {
 }
 /*dòng kính mời*/
 .subtitle {
-  font-family: 'CoupletFont', 'WeddingFont', serif;
+ 
   font-size: 14px;              /* cỡ chữ nội dung */
   line-height: 1.6;             /* giãn dòng */
   text-align: center;           /* căn giữa toàn khối */
@@ -368,9 +362,15 @@ html,body {
 
 .invite-title {
   display: block;               /* chiếm 1 dòng riêng */
-  font-size: 18px;              /* chữ to hơn */
+  font-size: 25px;              /* chữ to hơn */
   font-weight: 600;             /* nhấn mạnh */
-  margin-bottom: 6px;           /* cách dòng dưới */
+  margin-bottom: 15px;           /* cách dòng dưới */
+}
+.invite-title h3 {
+  font-family:'CoupletFont' ;
+}
+.month-vi h3{
+  font-family:'CoupletFont' ;
 }
 .scene-title {
   background: rgba(255,255,255,0.08); /* nền mờ */
@@ -561,7 +561,6 @@ html,body {
   display: flex;              /* bật flex */
   justify-content: center;    /* căn giữa ngang */
   margin: 20px 0;             /* cách trên dưới */
-  font-family: 'FONTTEN';
 }
 
 /* Box nội dung */
@@ -863,7 +862,7 @@ html,body {
   backdrop-filter: blur(4px);         /* hiệu ứng kính */
 }
 .wish-list {
-  max-height: 250px;       /* Chỉ hiển thị 3 lời chúc */
+  max-height: 320px;       /* Chỉ hiển thị 3 lời chúc */
   overflow-y: auto;        /* Thanh cuộn khi quá 3 lời chúc */
   padding: 10px;
   border: 5px solid #000000; /* viền đỏ cưới */
@@ -912,13 +911,23 @@ html,body {
 }
 
 .wish-text {
+  font-size: 12px;
+  line-height: 1.6;           /* 🔥 QUAN TRỌNG */
   color: #333;
-  line-height: 0.5;
-  white-space: pre-wrap; /* giữ xuống dòng */
+
+  white-space: normal;        /* cho xuống dòng */
+  word-break: break-word;     /* bẻ chữ dài */
+  overflow-wrap: break-word;  /* mobile Safari */
 }
-
-
-
+.countdown{
+    font-family: 'thuphap'; 
+}
+.titlechuc{
+  font-family: 'CoupletFont';
+}
+.text{
+  font-family:sans-serif;
+} 
 
 
 
