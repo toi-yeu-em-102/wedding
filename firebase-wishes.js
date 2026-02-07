@@ -35,7 +35,7 @@ let isAdmin = false;
 
 // 5️⃣ Admin login
 // ===== ADMIN ẨN 100% =====
-const ADMIN_PASSWORD = "admin123";
+const ADMIN_PASSWORD = "admin1998";
 const wishTitle = document.getElementById("wishTitle");
 
 if (wishTitle) {
