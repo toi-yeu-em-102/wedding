@@ -168,7 +168,7 @@ html,body {
   background: linear-gradient(
     to right,
     transparent,
-    #791212ef,
+    #b61d0fa5,
     transparent
   );      /* ❌ bỏ nền khung */
   border-radius: 0;              /* ❌ bỏ bo góc */
@@ -193,9 +193,9 @@ html,body {
    =============================== */
 .title {
   font-size: 40px;                   /* cỡ tiêu đề */
-  font-weight: 70;                  /* chữ đậm */
-  margin-bottom: 1px;                /* cách nội dung dưới */
-  color: #520a48; 
+  font-weight: 7;                  /* chữ đậm */
+  margin-bottom: 5px;                /* cách nội dung dưới */
+  color: #000000; 
 }
 .title{
   display: flex;
