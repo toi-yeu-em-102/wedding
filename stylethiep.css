@@ -928,7 +928,11 @@ html,body {
 .text{
   font-family:sans-serif;
 } 
-
+.guest-name {
+  color: #c1121f;
+  font-weight: 700;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.25);
+}
 
 
 
