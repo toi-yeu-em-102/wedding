@@ -10,14 +10,16 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-database.js";
 
 // 2️⃣ Firebase config
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAL1UB5vtocLLYdiYQUzBK8sA5ZfF9whuM",
-  authDomain: "thiep-191b3.firebaseapp.com",
-  databaseURL: "https://thiep-191b3-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "thiep-191b3",
-  storageBucket: "thiep-191b3.firebasestorage.app",
-  messagingSenderId: "829855546235",
-  appId: "1:829855546235:web:26e8fe83cc80d36cc25bde"
+  apiKey: "AIzaSyCnMPF7AqRnZYB-wuwakq9srobkRjT6icE",
+  authDomain: "anhcuoi-ce057.firebaseapp.com",
+  databaseURL: "https://anhcuoi-ce057-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "anhcuoi-ce057",
+  storageBucket: "anhcuoi-ce057.firebasestorage.app",
+  messagingSenderId: "333885844822",
+  appId: "1:333885844822:web:935989aa203b253c97baf7",
+  measurementId: "G-6K58FE86QK"
 };
 
 // 3️⃣ Init
@@ -175,3 +177,4 @@ rsvpForm.addEventListener('submit', (e) => {
     alert("❌ Gửi xác nhận thất bại");
   });
 });
+
